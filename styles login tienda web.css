@@ -1,0 +1,162 @@
+:root{
+    --primary: #3364FF;
+    --secundary: #959594;
+    --amarillo_pollito: #F6FA05;
+    --verde_palido: #67F15B;
+    --gris_super_palido: #E9EEE8;
+    --nose: #6902f9;
+    --celeste_bacano: #0dcee8;
+    --azul_marino: #007bff;
+    --naranja_oscuro: #dbb520;
+    --Orange_Hub: #ffb700;
+}
+
+/* Global styles */
+
+header h1{
+    margin-top: -300px;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: var(--gris_super_palido);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+    background-image: url(img/Mustangs\ parqueo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    overflow-wrap: break-word;
+    -webkit-overflow-scrolling: touch;
+
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* Especificos */
+
+/* Titulo */
+
+/* XJ */
+.xj-text{
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* Hub */
+.highlight{
+    background-color: var(--Orange_Hub);
+    border-radius: 5px;
+    padding: 0 5px;
+    box-shadow: var(--gris_super_palido) 1px 1px 10px;
+    color: black;
+}
+
+/* Login */
+
+.login-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px;
+    width: 310px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: 26%;
+    left: 38%;
+}
+
+.login-container h2{
+    margin-bottom: 20px;
+    color: var(--celeste_bacano);
+}
+
+.login-container label{
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    color: var(--gris_super_palido);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"]{
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-sizing: border-box; 
+        font-size: 14px; 
+        transition: all 0.3s ease;  
+    }
+
+.login-container button[type="submit"]{
+    background-color: #007bff;
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/*Estilizando los inputs*/
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: var(--Orange_Hub);
+    outline: none;
+    box-shadow: 0 0 5px var(--Orange_Hub);
+}
+
+.login-container button:hover{
+    background-color: var(--nose);
+}
+
+.login-container p{
+    color: var(--gris_super_palido);
+    margin-top: 15px;
+}
+
+.login-container p a{
+    color: var(--naranja_oscuro);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.login-container p a:hover{
+    text-decoration: underline;
+    color: #d19806;
+    transition: all 0.3s ease; 
+}
