@@ -1,0 +1,51 @@
+{% extends "base/base.html" %}
+{% block content %}
+{% load static %}
+      <link rel="stylesheet" href="{% static 'css/components/index.css' %}">
+      {% include "components/header.html" %}
+      {% include "components/section.html" %}
+{% endblock  %}
+
+<!-- Ayuda
+
+      ```django
+      {% extends "base/base.html" %}
+      ```
+      - **`{% extends "base/base.html" %}`**: Esta línea indica que la plantilla actual se basa en `base.html`, que probablemente contiene la estructura común del sitio (como `<html>`, `<head>`, y el contenedor principal).
+
+      ```django
+      {% block content %}
+      ```
+      - **`{% block content %}`**: Comienza un bloque llamado `content`, que es una sección que puede ser sobrescrita en las plantillas que extienden `base.html`. Este bloque define dónde se colocará el contenido específico de la página.
+
+      ```django
+      {% load static %}
+      ```
+      - **`{% load static %}`**: Carga la etiqueta `static`, que permite el uso de archivos estáticos, como hojas de estilo, imágenes o scripts.
+
+      ```django
+      <link rel="stylesheet" href="{% static 'css/components/index.css' %}">
+      ```
+      - **`<link rel="stylesheet" href="{% static 'css/components/index.css' %}">`**: Inserta un enlace a una hoja de estilo CSS ubicada en `css/components/index.css`. Usa la etiqueta `static` para resolver la ruta correcta.
+
+      ```django
+      {% include "components/header.html" %}
+      ```
+      - **`{% include "components/header.html" %}`**: Incluye el contenido del archivo `header.html`, que podría contener la cabecera de la página (como el logo y la navegación).
+
+      ```django
+      {% include "components/section.html" %}
+      ```
+      - **`{% include "components/section.html" %}`**: Similar a la línea anterior, esto incluye el contenido de `section.html`, que probablemente contiene una sección principal de la página.
+
+      ```django
+      {% endblock %}
+      ```
+      - **`{% endblock %}`**: Cierra el bloque `content`, indicando el final de la sección que se sobrescribirá en `base.html`.
+
+      ### Resumen
+      Este fragmento de código define una plantilla que:
+      - Hereda de una plantilla base.
+      - Carga un archivo CSS específico.
+      - Incluye dos fragmentos HTML (cabecera y sección) dentro del bloque de contenido principal.
+-->
