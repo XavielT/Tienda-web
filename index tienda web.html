@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Defini el tipo de codificacion de caracteres del documento en UTF-8 -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Aqui adapte la visualizacion de la pagina al tamano de la pantalla donde se vea -->
+        <title> XJ AutoHub </title>
+        <link rel="preload" href="normalize tienda web.css" as="style">
+        <link rel="stylesheet" href="normalize tienda web.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
+            rel="stylesheet">
+        <!-- relacionando la fuente "Krub" con el grosor 400 (normal) y 700 (negrita) -->
+        <link rel="preload" href="styles tienda web.css" as="style">
+        <link rel="stylesheet" href="styles tienda web.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 class="logo"> <!-- Logo -->
+                <span class="xj-text">XJ</span> Auto <span class="Hub">Hub</span>
+            </h1>
+        </header>
+
+        <div class="background_blur">
+            <div class="nav"> <!-- Seccion de navegacion -->
+                <nav class="navegacion principal">
+                    <a class= "Main_Contraste" href="#"> Pagina Principal </a>
+                    <a href="#"> HubMarket </a>
+                    <a href="#"> Dealers </a>
+                    <a href="#"> Eventos / CarMeets  </a>
+                    <a href="#"> Performance </a>
+                    <a href="#"> Contacto </a>
+    
+                    <!-- Buscador -->
+                    <div class="search">
+                        <input type="text" placeholder="Buscar...">
+                        <button type="submit">
+                            <!-- Icono SVG -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m15.75 15.75-2.489-2.489m0 0a3.375 3.375 0 1 0-4.773-4.773 3.375 3.375 0 0 0 4.774 4.774ZM21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                              </svg>                          
+                        </button>
+                    </div>
+                </nav> <!-- Barra de navegacion, con sus enlaces -->
+            </div>
+    
+            <section class="Seccion_Actualidad_Racing">
+                
+                <h2>Automovilismo y Performance
+                    <span class="DM">Dominican Market</span>
+                </h2>
+
+                <div class="contenido_project">
+                    
+                    <!-- Seccion de Noticias Racing -->
+                    <div class="noticias_racing">
+                        <div class="slider_container">
+                            <!-- Boton de la imagen anterior -->
+                            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    
+                            <div class="slider_wrapper">
+    
+                                <!-- Slides -->
+    
+                                <div class="slide">
+                                    <img src="img/Noticias_racing/3ra_puntuable_dragueo.png" alt="Noticia Racing">
+                                    <div class="slide_caption">
+                                        <p>3ra Puntuable de Dragueo</p>
+                                    </div>
+                                </div>
+    
+                                <div class="slide">
+                                    <img src= "img/Noticias_racing/Dominican_roll_race.png" alt="Noticia Racing">
+                                    <div class="slide_caption">
+                                        <p>Dominican Roll Race</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Boton de la siguiente imagen -->
+                            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Seccion de Actualidad Racing -->
+                    <div class="actualidad_racing">
+                        <div class="slider_container">
+                            <!-- Boton de la imagen anterior -->
+                            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    
+                            <div class="slider_wrapper">
+    
+                                <!-- Slides -->
+                                
+                                <div class="slide">
+                                    <img src="img/Actualidades_racing/Mustang_GTD_2025.png" alt="Actualidad Racing">
+                                    <div class="slide_caption">
+                                        <p>Nuevo Mustang GTD 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <!-- Boton de la siguiente imagen -->
+                            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+                        </div>
+                    </div>
+                    
+
+                </div><!-- Cerrando contenido-project -->
+            </section> <!-- Cerrando section project -->
+        </div>
+        
+        <script src="Complementos/Slides.js"></script>
+    </body>
+
+    <!-- Pie de pag -->
+    <footer>
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M480-80q-106 0-173-31.83-67-31.84-67-81.5 0-25.34 20.17-47.84 20.16-22.5 55.5-37.5l51 47.67q-16.34 4.67-32.5 15.33Q318-205 306.67-193.33q15.66 18.66 67 32.66 51.33 14 106.33 14t106.83-14q51.84-14 67.5-32.66-11.66-12.67-29.33-23-17.67-10.34-34.33-15l51.33-48q37.33 15.33 57.67 37.83Q720-219 720-193.33q0 49.66-67 81.5Q586-80 480-80Zm1-203.33q105.67-78.34 159-158.17 53.33-79.83 53.33-152.5 0-108.67-69-164T480-813.33q-74.67 0-144 55.33t-69.33 164q0 71 53 147.83 53 76.84 161.33 162.84ZM480-200Q339.67-304 269.83-402 200-500 200-594q0-71 25.5-124.5t65.83-89.5q40.34-36 90-54Q431-880 480-880t99 18q50 18 90 54t65.5 89.5Q760-665 760-594q0 94-69.5 192T480-200Zm0-320q33 0 56.5-23.5T560-600q0-33-23.5-56.5T480-680q-33 0-56.5 23.5T400-600q0 33 23.5 56.5T480-520Zm0-80Z"/></svg>
+            
+            <strong>Santo Domingo, Republica Dominicana</strong>
+        </p>
+        
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M80-120v-720h393.33v163.33H880V-120H80Zm66.67-66.67h96.66v-96.66h-96.66v96.66Zm0-163.33h96.66v-96.67h-96.66V-350Zm0-163.33h96.66V-610h-96.66v96.67Zm0-163.34h96.66v-96.66h-96.66v96.66Zm163.33 490h96.67v-96.66H310v96.66ZM310-350h96.67v-96.67H310V-350Zm0-163.33h96.67V-610H310v96.67Zm0-163.34h96.67v-96.66H310v96.66Zm163.33 490h340V-610h-340v96.67h80v66.66h-80V-350h80v66.67h-80v96.66Zm176.67-260v-66.66h66.67v66.66H650Zm0 163.34V-350h66.67v66.67H650Z"/></svg>
+            
+            <strong>XJAutoHub ©®</strong>
+        </p>
+        
+        <p>
+            <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m503.33-80-10-113.33h-30q-142.66 0-243-100.34Q120-394 120-536.67q0-142.66 100.67-243Q321.33-880 464.67-880q71 0 131.83 25.83 60.83 25.84 106.33 72 45.5 46.17 71.34 108.34Q800-611.67 800-538.67q0 69-21.17 136-21.16 67-60 126.67-38.83 59.67-93.66 109.67-54.84 50-121.84 86.33Zm60-120.67q78.34-66 124.17-155.16 45.83-89.17 45.83-182.84 0-119-76.83-196.83-76.83-77.83-191.83-77.83-116.34 0-197.17 80.83-80.83 80.83-80.83 195.83 0 115 80.83 195.84Q348.33-260 463.33-260h100v59.33Zm-99-108.33q16.34 0 27.67-11.33 11.33-11.34 11.33-27.67 0-16.33-11.33-27.67Q480.67-387 464.33-387q-16.33 0-27.66 11.33-11.34 11.34-11.34 27.67 0 16.33 11.34 27.67Q448-309 464.33-309Zm-27.66-133H490q0-26.67 7.67-41.67 7.66-15 36.33-43.66 24-24 35.33-46 11.34-22 11.34-47.34 0-47-31.84-74.83-31.83-27.83-81.5-27.83-42.66 0-74.66 22.83T346-640.67l49.33 20q9-23 26.67-36.83 17.67-13.83 43.33-13.83 29 0 44.84 14.66Q526-642 526-620q0 18.33-10.67 35.83-10.66 17.5-34 41.5-29.66 28.67-37.16 45.84-7.5 17.16-7.5 54.83ZM460-507Z"/></svg>
+            
+            <strong>xjautohub@gmail.com / 809-779-9782</strong>
+        </p>
+    </footer>
+</html>
+
