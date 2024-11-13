@@ -1,0 +1,39 @@
+# Entorno virtual
+venv/
+env/
+.env
+vn/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Archivos de bases de datos
+db.sqlite3
+*.sqlite3
+
+# Archivos de configuración de PyCharm
+.idea/
+*.iml
+
+# Archivos de configuración de Visual Studio Code
+.vscode/
+
+# Archivos de configuración de Jupyter
+.ipynb_checkpoints
+
+# Archivos de configuración de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de pruebas
+*.log
+*.pot
+*.pyc
+*.pdb
+coverage.xml
+*.cover
+*.egg-info/
+dist/
+build/
